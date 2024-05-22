@@ -10,8 +10,7 @@ export class FireStoreService {
   constructor(private fireStore: Firestore) { }
 
   save(musica: Musica){
-    addDoc(collection(this.fireStore, 'canciones'),Object.assign({},musica))
+    addDoc(collection(this.fireStore,'canciones'),Object.assign({},musica))
   }
-
 
 }
